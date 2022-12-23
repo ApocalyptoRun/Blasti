@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Blasti"
         tools:targetApi="31">
         <activity
+            android:name=".FormSignUpClient"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
             android:name=".Confirmer"
             android:exported="false" />
         <activity
@@ -27,9 +33,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".InscriptionClient"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +40,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InscriptionClient"
+            android:exported="false" />
     </application>
 
 </manifest>

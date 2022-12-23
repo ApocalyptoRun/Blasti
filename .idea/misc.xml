@@ -5,13 +5,22 @@
       <map>
         <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2015" />
         <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/drawable/background_style.xml" value="0.2015" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/drawable/backgroundwhite.xml" value="0.2585" />
         <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2015" />
         <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_confirmation_didentite.xml" value="0.25416666666666665" />
         <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_confirmer.xml" value="0.25416666666666665" />
-        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_inscription_chauffeur.xml" value="0.25416666666666665" />
-        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_inscription_client.xml" value="0.25416666666666665" />
-        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
-        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_signinchoix.xml" value="0.25416666666666665" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_facebook.xml" value="0.18854166666666666" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_inscription_chauffeur.xml" value="0.2" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_inscription_client.xml" value="0.2" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_sign_in.xml" value="0.20260416666666667" />
+        <entry key="..\:/HADHEMI/DMWM/Android/corection-TP/Blasti/app/src/main/res/layout/activity_signinchoix.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Desktop/BLASTI/Blasti/app/src/main/res/layout/activity_confirmation_didentite.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Desktop/BLASTI/Blasti/app/src/main/res/layout/activity_confirmer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Desktop/BLASTI/Blasti/app/src/main/res/layout/activity_form_sign_up_client.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Desktop/BLASTI/Blasti/app/src/main/res/layout/activity_inscription_chauffeur.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Desktop/BLASTI/Blasti/app/src/main/res/layout/activity_inscription_client.xml" value="0.33" />
+        <entry key="..\:/Users/HP/Desktop/BLASTI/Blasti/app/src/main/res/layout/activity_signinchoix.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
