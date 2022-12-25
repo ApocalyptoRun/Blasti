@@ -69,15 +69,24 @@ public class SignIn extends AppCompatActivity {
                 firebaseFirestore.collection("users").document(auth.getCurrentUser().getUid()).get().addOnCompleteListener(task1 -> {
                     if (task1.isSuccessful()) {
                         String role = task1.getResult().getString("role");
+                        String nom = task1.getResult().getString("nom");
+                        String prenom = task1.getResult().getString("prenom");
                         System.out.println(role);
                         if (role.equals("CHAUFFEUR")) {
-                            Intent intent = new Intent(SignIn.this, AccueilChauffeur.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            startActivity(intent);
+                           // Intent intent = new Intent(SignIn.this, AccueilChauffeur.class);
+                            Intent intent = new Intent(SignIn.this, Confirmer.class);
+                            intent.putExtra("role", role);
+                            intent.putExtra("nom", nom);
+                            intent.putExtra("prenom", prenom);
+
+                             startActivity(intent);
                         } else if (role.equals("CLIENT")) {
-                            Intent intent = new Intent(SignIn.this, AccueilClient.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            startActivity(intent);
+                          //  Intent intent = new Intent(SignIn.this, AccueilClient.class);
+                            Intent intent = new Intent(SignIn.this, Confirmer.class);
+                            intent.putExtra("role", role);
+                            intent.putExtra("nom", nom);
+                            intent.putExtra("prenom", prenom);
+                             startActivity(intent);
                         }
                     }
                 });

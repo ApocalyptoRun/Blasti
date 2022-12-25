@@ -6,73 +6,92 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".AccueilChauffeur">
 
-    <TextView
-        android:id="@+id/textView15"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ajouter une offre"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-    <EditText
-        android:id="@+id/depart"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150px"
-        android:ems="10"
-        android:hint="Départ"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
 
-    <EditText
-        android:id="@+id/arrivee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
-        android:ems="10"
-        android:hint="Arrivée"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une offre"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/dateDepart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
-        android:ems="10"
-        android:hint="Date de départ"
-        android:inputType="date" />
+        <EditText
+            android:id="@+id/depart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150px"
+            android:ems="10"
+            android:hint="Départ"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/arrivee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Arrivée"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/dateDepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Date de départ"
+            android:inputType="date" />
 
 
+        <EditText
+            android:id="@+id/heureArrivée"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Temps de départ"
+            android:inputType="time" />
 
+        <EditText
+            android:id="@+id/prix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Prix"
+            android:inputType="number" />
 
+        <Button
+            android:id="@+id/buttonAjouter"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75px"
+            android:text="Ajouter" />
 
-    <EditText
-        android:id="@+id/heureArrivée"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
-        android:ems="10"
-        android:hint="Temps de départ"
-        android:inputType="time" />
-
-    <EditText
-        android:id="@+id/prix"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
-        android:ems="10"
-        android:hint="Prix"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/buttonAjouter"
-        android:layout_width="500px"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75px"
-        android:text="Ajouter" />
+    </LinearLayout>
 
 </LinearLayout>

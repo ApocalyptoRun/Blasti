@@ -1,13 +1,17 @@
 package com.example.blasti;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
-import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
@@ -21,7 +25,7 @@ public class AccueilClient extends AppCompatActivity {
 
     private TextView AccueilClientHeader;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+    FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,16 @@ public class AccueilClient extends AppCompatActivity {
         setContentView(R.layout.activity_accueil_client);
         AccueilClientHeader = findViewById(R.id.AccueilClientHeader);
 
+        getTrajet();
+
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+    }
+
+    private void getTrajet() {
         db.collection("Trajets").get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 mTrajetList = new Object[task.getResult().size()];
@@ -36,13 +50,10 @@ public class AccueilClient extends AppCompatActivity {
                 for (QueryDocumentSnapshot document : task.getResult()) {
 
                     Object trajet = document.getData();
-                    System.out.println("rajet"+trajet);
                     mTrajetList[i] = new HashMap<String, String>();
                     mTrajetList[i] = trajet;
-                    System.out.println("trajetlist" +mTrajetList[i]);
                     i++;
-                    AccueilClientHeader.setText("Liste des offres " );
-
+                    AccueilClientHeader.setText("Liste des trajets ");
 
 
                 }
@@ -52,20 +63,36 @@ public class AccueilClient extends AppCompatActivity {
                 LinearLayoutManager layoutManager = new LinearLayoutManager(this);
                 mRecyclerView.setLayoutManager(layoutManager);
 
-            }
-            else {
-                AccueilClientHeader.setText("Il n'y a pas des offres pour le moment " );
+            } else {
+                AccueilClientHeader.setText("Il n'y a pas des trajets pour le moment ");
             }
         });
 
+    }
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_accueil, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
+        int id = item.getItemId();
 
+        if (id == R.id.actualiser) {
+            getTrajet();
+            return true;
 
+        } else if (id == R.id.logout) {
+            mAuth.signOut();
+            Intent intent = new Intent(AccueilClient.this, MainActivity.class);
+            startActivity(intent);
+            return true;
 
+        }
 
+        return super.onOptionsItemSelected(item);
     }
 }
