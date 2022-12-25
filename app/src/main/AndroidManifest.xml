@@ -13,9 +13,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Blasti"
         tools:targetApi="31">
+
         <activity
-            android:name=".FormSignUpClient"
-            android:exported="false" />
+            android:name=".AccueilClient"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AccueilInvite"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AccueilChauffeur"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".SignIn"
             android:exported="false" />
@@ -23,13 +42,10 @@
             android:name=".Confirmer"
             android:exported="false" />
         <activity
-            android:name=".ConfirmationDidentite"
-            android:exported="false" />
-        <activity
             android:name=".InscriptionChauffeur"
             android:exported="false" />
         <activity
-            android:name=".signinchoix"
+            android:name=".Signupchoix"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

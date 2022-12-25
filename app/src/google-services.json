@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22322982796",
+    "project_id": "blasti-681c6",
+    "storage_bucket": "blasti-681c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22322982796:android:5ea18fffdcbb9f63e930a9",
+        "android_client_info": {
+          "package_name": "com.example.blasti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22322982796-d12dllccrbhsi8kkidpmpnlc3un5nt2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhChBzYL-nwxGcOsTPbEviBskyzj8MqjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22322982796-d12dllccrbhsi8kkidpmpnlc3un5nt2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

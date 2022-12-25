@@ -7,19 +7,18 @@ public class User {
     private String prenom;
     private String numeroTelephone;
     private String email;
-    private String password;
-    private String role;
+
+    private Role role;
 
     public User() {
     }
 
-    public User(String cin, String nom, String prenom, String numeroTelephone, String email, String password, String role) {
+    public User(String cin, String nom, String prenom, String numeroTelephone, String email, Role role) {
         this.cin = cin;
         this.nom = nom;
         this.prenom = prenom;
         this.numeroTelephone = numeroTelephone;
         this.email = email;
-        this.password = password;
         this.role = role;
     }
 
@@ -63,19 +62,12 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(Role role) {
         this.role = role;
     }
 }

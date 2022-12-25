@@ -1,11 +1,11 @@
 package com.example.blasti;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void choixMode(View view) {
-        Intent inscrit=new Intent(MainActivity.this,signinchoix.class);
+        Intent inscrit=new Intent(MainActivity.this, Signupchoix.class);
         startActivity(inscrit);
     }
 
@@ -23,5 +23,19 @@ public class MainActivity extends AppCompatActivity {
     public void signIn(View view) {
         Intent connct=new Intent(MainActivity.this,SignIn.class);
         startActivity(connct);
+    }
+    // btnFacebook onclick listener
+    public void btnFacebook(View view) {
+        //add an alert dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("Pas encore implémenté");
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+    }
+
+    public void goToAccueilInvite(View view) {
+        Intent accueilInvite=new Intent(MainActivity.this,AccueilInvite.class);
+        startActivity(accueilInvite);
     }
 }

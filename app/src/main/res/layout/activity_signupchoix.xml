@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_style"
 
-    tools:context=".signinchoix">
+    tools:context=".Signupchoix">
 
     <TextView
         android:id="@+id/textBlasti"

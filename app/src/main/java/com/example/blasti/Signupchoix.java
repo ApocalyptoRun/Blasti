@@ -7,22 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 
 
-public class signinchoix extends AppCompatActivity {
+public class Signupchoix extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signinchoix);
+        setContentView(R.layout.activity_signupchoix);
     }
 
     public void chauffeurSignUp(View view) {
-        Intent inscritChauff=new Intent(signinchoix.this,InscriptionChauffeur.class);
+        Intent inscritChauff=new Intent(Signupchoix.this,InscriptionChauffeur.class);
         startActivity(inscritChauff);
 
     }
 
     public void clientSignUp(View view) {
-        Intent inscritClient=new Intent(signinchoix.this,InscriptionClient.class);
+        Intent inscritClient=new Intent(Signupchoix.this,InscriptionClient.class);
         startActivity(inscritClient);
     }
 }
