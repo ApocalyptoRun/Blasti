@@ -1,6 +1,7 @@
 package com.example.blasti;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,12 +13,16 @@ import com.example.blasti.Model.Trajet;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.LinkedList;
+
 public class AccueilChauffeur extends AppCompatActivity {
     EditText depart, arrivee, date, heure, prix;
     Button btnAjouter;
 
     FirebaseAuth auth;
     FirebaseFirestore firebaseFirestore;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,8 @@ public class AccueilChauffeur extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
+
+
 
     }
 

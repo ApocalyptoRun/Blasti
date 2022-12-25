@@ -17,6 +17,10 @@ public class Trajet {
         this.nomChauffeur = nomChauffeur;
     }
 
+    public Trajet() {
+
+    }
+
     public String getDepart() {
         return depart;
     }

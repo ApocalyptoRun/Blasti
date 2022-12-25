@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#A4DDDDDD"
+    android:paddingLeft="50dp"
+    android:layout_marginTop="30px"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/trajetDate"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/trajetHeure"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/trajetDepart"
+            android:layout_width="450px"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----->"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/trajetArrivee"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
+   <LinearLayout
+       android:layout_marginLeft="30dp"
+
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <ImageView
+           android:layout_width="100px"
+           android:layout_height="wrap_content"
+              android:src="@drawable/ic_baseline_attach_money_24" />
+       <TextView
+           android:id="@+id/trajetPrix"
+           android:layout_width="300px"
+           android:layout_height="wrap_content"
+           android:textSize="24sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+
+        <TextView
+            android:id="@+id/trajetChauffeur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
