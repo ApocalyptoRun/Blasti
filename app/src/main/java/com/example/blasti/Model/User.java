@@ -1,5 +1,7 @@
-package com.example.blasti;
+package com.example.blasti.Model;
 
+
+import com.example.blasti.Model.Role;
 
 public class User {
     private String cin;

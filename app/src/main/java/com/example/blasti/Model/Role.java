@@ -1,4 +1,4 @@
-package com.example.blasti;
+package com.example.blasti.Model;
 
 public enum Role {
     CLIENT, CHAUFFEUR
