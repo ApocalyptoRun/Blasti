@@ -127,7 +127,6 @@ public class InscriptionClient extends AppCompatActivity implements View.OnClick
                     Intent intent = new Intent(InscriptionClient.this, SignIn.class);
                     startActivity(intent);
                 } else {
-                    // add an alert dialog
                     AlertDialog.Builder builder = new AlertDialog.Builder(InscriptionClient.this);
                     builder.setMessage(task.getException().getMessage())
                             .setTitle("Error")

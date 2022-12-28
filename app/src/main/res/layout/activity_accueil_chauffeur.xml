@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@drawable/background_style"
+
     tools:context=".AccueilChauffeur">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -26,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:padding="20dp"
         >
 
@@ -33,8 +36,10 @@
             android:id="@+id/textView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ajouter une offre"
+            android:text="Ajouter un trajet"
+            android:textStyle="bold"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:textSize="24sp" />
 
         <EditText
@@ -44,6 +49,8 @@
             android:layout_marginTop="150px"
             android:ems="10"
             android:hint="Départ"
+
+            android:textColorHint="#8E8E8E"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
@@ -53,6 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50px"
             android:ems="10"
+            android:textColorHint="#8E8E8E"
+
             android:hint="Arrivée"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
@@ -63,6 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50px"
             android:ems="10"
+            android:textColorHint="#8E8E8E"
             android:hint="Date de départ"
             android:inputType="date" />
 
@@ -73,6 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50px"
             android:ems="10"
+            android:textColorHint="#8E8E8E"
+
             android:hint="Temps de départ"
             android:inputType="time" />
 
@@ -82,10 +94,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50px"
             android:ems="10"
+            android:textColorHint="#8E8E8E"
+
             android:hint="Prix"
             android:inputType="number" />
 
         <Button
+
             android:id="@+id/buttonAjouter"
             android:layout_width="500px"
             android:layout_height="wrap_content"

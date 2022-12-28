@@ -24,9 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Intent connct=new Intent(MainActivity.this,SignIn.class);
         startActivity(connct);
     }
-    // btnFacebook onclick listener
     public void btnFacebook(View view) {
-        //add an alert dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setMessage("Pas encore implémenté");
         AlertDialog alertDialog = builder.create();

@@ -43,7 +43,7 @@ public class SignIn extends AppCompatActivity {
     }
 
     private void signIn() {
-        Toast.makeText(this, "signIn", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "signIn", Toast.LENGTH_SHORT).show();
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 

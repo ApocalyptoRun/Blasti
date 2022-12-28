@@ -18,7 +18,6 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.util.HashMap;
 
 public class AccueilClient extends AppCompatActivity {
-    //private final LinkedList<String> mTrajetList = new LinkedList<>();
     private Object[] mTrajetList;
     private RecyclerView mRecyclerView;
     private TrajetListAdapter mAdapter;

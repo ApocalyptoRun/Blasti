@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="#A4DDDDDD"
+    android:background="#D5FFFFFF"
+
     android:paddingLeft="50dp"
     android:layout_marginTop="30px"
     >
@@ -44,19 +45,23 @@
 
         <TextView
             android:id="@+id/trajetDepart"
-            android:layout_width="450px"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
             android:text="----->"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/trajetArrivee"
-            android:layout_width="400px"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
             android:textSize="24sp" />
     </LinearLayout>
    <LinearLayout

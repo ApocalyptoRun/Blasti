@@ -54,7 +54,7 @@ public class InscriptionChauffeur extends AppCompatActivity {
 
 
     private void registerChauffeur() {
-        Toast.makeText(this, "registerChauffeur", Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(this, "registerChauffeur", Toast.LENGTH_SHORT).show();
         String nom = editTextNom.getText().toString().trim();
         String prenom = editTextPrenom.getText().toString().trim();
         String cin = editTextCin.getText().toString().trim();
